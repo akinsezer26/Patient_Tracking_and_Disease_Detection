@@ -1,0 +1,38 @@
+<html>
+  <title>Giris</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='Giris.css') }}">
+  <style> 
+    input[type=text] {
+    width: 400px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+  }
+    input[type=password] {
+    width: 400px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+    input[type=submit] {
+    width: 400px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+  </style>
+  <body>
+  <form name="Login" method="post" action="Login">
+    <input type="text" name="txtID" placeholder="Kullanıcı Adı">
+    <br>
+    <input type="password" name="txtSifre" placeholder="Şifre">
+    <br>
+    <input style="font-size : 19px;" type="submit"name="btnLogin"value="Giriş">
+    <br>
+    <strong style="color: blue;width:300px;height:100px;solid;" onclick="javascript:window.location = 'KayitOl';">Kayıt Ol</strong>
+    <strong style="color: blue;width:300px;height:100px;solid;margin-left: 32px;" onclick="javascript:window.location = 'doktorLogin';">Doktor Girişi</strong>
+    <strong style="color: blue;width:300px;height:100px;solid;margin-left: 32px;" onclick="javascript:window.location = 'teknisyenLogin';">Teknisyen Girişi</strong>
+    <br><br>
+    <strong style="color: red;">Hatalı Şifre veya Kullanıcı Adı !</strong>
+  </form>
+  </body>
+</html>

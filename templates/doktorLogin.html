@@ -1,0 +1,38 @@
+<html>
+  <title>Doktor Girişi</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='doktorGiris.css') }}">
+  <style> 
+    input[type=text] {
+    width: 400px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+  }
+    input[type=password] {
+    width: 400px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+    input[type=submit] {
+    width: 400px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+  </style>
+  <body>
+  <form name="Login" method="post" action="doktorLogin">
+    <input type="text" name="txtID" placeholder="Kullanıcı Adı">
+    <br>
+    <input type="password" name="txtSifre" placeholder="Şifre">
+    <br>
+    <input style="font-size : 19px;" type="submit"name="btnLogin"value="Giriş">
+  </form>
+  <!--
+   <form id="uploadbanner" enctype="multipart/form-data" method="post" action="predict">
+      <input id="rontgen" name="rontgen" type="file"/>
+      <input type="submit" value="submit" id="submit" />
+    </form>
+  -->
+  </body>
+</html>
